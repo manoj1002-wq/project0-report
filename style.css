@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+.navbar-nav{
+	margin-right: 50px;
+	margin-top: 2vh;
+}
+.nav-item{
+	margin: 0 15px;
+	font-weight: bold;
+
+}
+.navbar-light .navbar-brand{
+	font-weight: bold;
+	font-size: 2rem;
+	font-family: sans-serif;
+	color: rgb(126, 87, 255);
+	margin-left: 50px;
+}
+.navbar-light{
+	background-color: #fff !important;
+}
+
+
+.jumbotron{
+/*	height: 100%;
+*/	color: white;
+	font-size: 2.3rem;
+	text-align: left;
+	background-color: white;
+	margin-top: 50px;
+}
+.jumbotron h1{
+	margin-top: 7%;
+	color: rgb(44,44, 75);
+	font-weight: bold;
+	margin-left: 1%;
+}
+header p{
+	color:rgb(44,44, 75);
+	font-size: 24px;
+	margin-left: 3vh;
+}
+header .btn{
+	background-color:rgb(126, 87, 255);
+	margin-left: 6vh;
+	margin-top: 30px
+}
+
+header img{
+	width: 100%;
+	height: 100%;
+}
+
+
+#header{
+	text-align: center;
+	height: 100%;
+}
+
+section{
+	margin-top: 10%;
+	text-align: center;
+	margin-bottom: 10%;
+	color:  rgb(44,44, 75);
+}
+hr{
+	width: 10%;
+    /* height: 30%; */
+    background-color: rgb(126, 87, 255);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+main .row{
+	margin-top: 18vh;
+}
+main .row .col-md-6{
+	background-color: #fff;
+	height: 100%;
+	text-align: center;
+	color: rgb(44,44, 75);
+}
+main p{
+	padding: 20px 50px;
+}
+
+h2{
+	margin-bottom: 10%;
+	color:rgb(44,44, 75);
+}
+
+table{
+	margin-top: 2.5vw;
+	text-align: center;
+    box-shadow: 4px 3px 6px 0px #b0b0b0b3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: auto;
+    font-size: 1.6em;
+}
+
+table th{
+	padding: 2vw;
+}
+
+table td{
+	padding: 3vw;
+	margin: 10px 0;
+}
+
+table th,td{
+	padding: 5%;
+}
+
+
+main .handwash{
+	width: 100%;
+	height: 100%;
+}
+
+main a{
+	font-size: 2em;
+}
+
+main ol{
+	list-style: none;
+}
+main .five-things  li {
+    background: rgb(126, 87, 255);
+    color: #fff;
+    counter-increment: myCounter;
+    margin: 0 0 30px 0;
+    padding: 13px;
+    position: relative;
+    top: 1em;
+    border-radius:  0em 2px 1em 1em;
+    padding-left: 2em;
+    font-size: 1.2em;
+    font-family: Constantia;
+}
+main  .five-things li:before{
+	content: counter(myCounter, decimal-leading-zero);
+	display: inline-block;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.3em;
+	background-color:  #fc5e79;
+	padding: 10px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: -40px;
+	border-radius: 50%;
+	font-family: exo;
+}
+
+
+main .five-things li:nth-child(even){
+    background-color: #434A54;
+}
+
+.contact-us{
+	background-image: url('/images/footer-bg.png');
+	background-color: rgb(44,44, 75);
+	text-align: center;
+	padding: 100px;
+	border-radius: 20px;
+
+}
+
+
+footer {
+	margin-top: 10%;
+}
+
+footer h1{
+	    color: #fff;
+}
+
+footer .form-inline{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	margin-top: 4vw;
+}
+
+footer .btn{
+	background-color:rgb(126, 87, 255);
+}
+
+footer .footer-list-1 li{
+	border-left: 4px solid #2c2c4b80;
+	margin: 10px 0;
+	margin-right: 100px;
+}
+
+footer .footer-list-2 li{
+	border-left: 4px solid #2c2c4b80;
+	margin: 10px 0;
+	margin-left: 20px;
+}
+footer .footer-right{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-right h4{
+	color:#2c2c4b80;
+	font-size: 20px;
+}
+
+/*Media Queries*/
+
+@media all and (max-width: 768px) {
+	header .display-4 {
+		font-size: 0.9em;
+	}
+	header p{
+		font-size:0.5em;
+		font-weight: bold;
+	}
+	.jumbotron{
+		text-align: center;
+	}
+	table th, td{
+		padding:1vmax;
+	}
+	table td{
+		width: 2vw;
+	}
+}
+
+
+@media all and (max-width: 576px) {
+	.display-4{
+		font-size: 0.7em ;
+	}
+	.jumbotron{
+		margin-top: 0;
+	}
+	table th, td{
+		padding:1vmax;
+	}
+	table td{
+		width: 2vw;
+	}
+}
